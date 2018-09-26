@@ -94,6 +94,7 @@ class PlacesAutocomplete extends React.Component {
         matchedSubstrings: p.matched_substrings,
         terms: p.terms,
         types: p.types,
+        fields: p.fields,
       })),
     });
   };
@@ -376,6 +377,7 @@ PlacesAutocomplete.propTypes = {
     offset: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     radius: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     types: PropTypes.array,
+    fields: PropTypes.array,
   }),
   debounce: PropTypes.number,
   highlightFirstSuggestion: PropTypes.bool,
